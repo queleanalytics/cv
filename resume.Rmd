@@ -1,0 +1,166 @@
+---
+title: Maurice TEKO résumé
+author: Maurice TEKO
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/custom_resume.css', 'css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- FALSE
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+
+# First let's get the data, filtering to only the items tagged as
+# Resume items
+position_data <- read_csv2('mypositions.csv') %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('research_positions', 'industry_positions') ~ 'positions', 
+      section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      TRUE ~ section
+    )
+  )  
+
+```
+
+
+Aside
+================================================================================
+
+
+![logo](me.JPG){width=100%}
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+
+
+- <i class="fa fa-envelope"></i> queleanalytics@gmail.com
+- <i class="fa fa-twitter"></i> [/QueleA_ <i class="fa fa-external-link-alt fa-xs"></i>](https://twitter.com/MauriceDataLab)
+- <i class="fa fa-github"></i> [/QueleA <i class="fa fa-external-link-alt fa-xs"></i>](https://github.com/tekomaurice) 
+- <i class="fab fa-linkedin-in"></i> [/QueleA <i class="fa fa-external-link-alt fa-xs"></i>](https://github.com/tekomaurice/queleanalytics-io-site/)
+- <i class="fa fa-phone"></i> +32(0)486828428
+
+
+
+Compétences {#skills}
+--------------------------------------------------------------------------------
+ **Management :**
+
+- Former et Diriger
+  - Formation des data scientist
+  - vulgarisation au top mangement
+  - Animation de tables rondes
+  
+  **Scientifiques :**
+
+- Statistiques
+  - Modelisation
+  - Intelligence artificielle
+
+**Programmation :**
+  
+- Manipulation de données
+  - R
+  - Python
+  - SQL
+  
+- Visualisation
+  - ggplot2
+  - Tableau, PowerBI
+  - D3.js
+
+- Reporting
+  - Shiny
+  - Rmarkdown
+  - PowerBi
+
+  
+
+
+<!-- Contributions Open Source {#open-source} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- All projects available at `github.com/felixmil/` -->
+
+
+<!-- - `shinysense`: R package to use sensor data in Shiny apps -->
+<!-- - `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com) -->
+<!-- - `slid3r`: D3 add-on for fully svg slider inputs -->
+
+
+Plus d'information {#more-info}
+--------------------------------------------------------------------------------
+
+ - [queleanalytics-io-site/Posts <i class="fa fa-external-link-alt fa-xs"></i>](https://github.com/tekomaurice/queleanalytics-io-site/Posts/)
+ - 
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Document généré par R et <br>{pagedown} - [code <i class="fa fa-external-link-alt fa-xs"></i>](https://github.com/tekomaurice/cv)
+
+<br>
+Mis à jour le `r Sys.Date()`.
+
+
+Main
+================================================================================
+
+Maurice TEKO {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+intro_text <- "J'ai commencé ma carrière en tant que consultant Statisticien dans divers laboratoires pharmaceutiques tels que GlaxoSmithKlein, UCB,  ...Passionné de mathématiques, mes diverses expériences m'ont permis d’appliquer de nombreuses méthodes stochastiques autant bayésiennes que fréquentistes. Ces méthodes traditionnelles associées à de nombreux algorithmes créés sur mesure, je les a mis au service de différentes compagnies d'assurances à des fins stratégiques d’évolution du marketing et de digitalisation.  
+Vous voulez en savoir plus? Rencontrons nous.
+"
+cat(sanitize_links(intro_text))
+```
+
+
+
+Principales Expériences Professionelles {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('positions')
+```
+
+
+Projets {data-icon=newspaper}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('project')
+```
+
+
+Cursus {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+
+

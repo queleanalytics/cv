@@ -1,0 +1,43 @@
+﻿section;in_resume;title;loc;institution;start;end;description_1;description_2;description_3
+education;TRUE; Licence en Mathématiques  ;Strasbourg;ULP, Université Louis Pasteur de Strasbourg;2001;2004;NA;NA;NA
+education;TRUE; Master en Statistiques;Strasbourg;ULP, Université Louis Pasteur de Strasbourg;2005;2006;NA;NA;NA
+education;TRUE;Thèse de doctorat  en statistiques (Modélisation bayésienne de la pandémie du H1N1 de 2009);Liege;Université de Liège, campus d’Arlon;2010;2015;NA;NA;NA
+industry_positions;TRUE;Statistician;;Gsk,Ucb,…;2007;2015;NA;NA;NA
+industry_positions;TRUE;Data Scientist;;AgInsurance;2015;2018;NA;NA;NA
+industry_positions;TRUE;Senior Data Scientist;;TouringAssurances;2018;2019;NA;NA;NA
+industry_positions;TRUE;Data Scientist| Consultant| Founder;;QueleAnalytics;2019;2020;NA;NA;NA
+project;TRUE;Classification automatique des mails entrant pour déterminer leur nature (traitement des sinistres, suppression des contrats, informations sur son contrat,… renseignements généraux) grâce à l’utilisation du NLP (Natural Language Processing) ou TAL (Traitement Automatique du Langage) : « Topics detection », « mails Mining and Parsing », « mail Forwarding », « sentiment analysis »,… ;NA;NA;NA;NA;NA;NA;NA
+project;TRUE;Tableau de bord interactif (Dashboard) résumant la situation de l’entreprise à chaque instant et permettant de prendre des décisions en temps réel ;NA;NA;NA;NA;NA;NA;NA
+project;TRUE;Optimisation (au moyen d’algorithmes) du process des coûts de réparation en cas d’accident automobile (détermination du tarif le plus juste à payer aux réparateurs). ;NA;NA;NA;NA;NA;NA;NA
+project;TRUE;Création d’une vue complète, à 360° du client  .;NA;NA;NA;NA;NA;NA;NA
+project;TRUE;Suivi de clients afin d’optimiser leur rétention et de leur proposer le produit adéquat au bon moment : Cross-sell, upsell, next-best buy ... ;NA;NA;NA;NA;NA;NA;NA
+project;TRUE;HR Analytics  (L’analyses des données HR) . ;NA;NA;NA;NA;NA;NA;NA
+project;TRUE;Coaching des data scientist. ;NA;NA;NA;NA;NA;NA;NA
+project;TRUE;Participation aux programmes  de formation en analytics tel que  l’ATDP : Analytics Talent Development Program. ;NA;NA;NA;NA;NA;NA;NA
+project;FALSE;[Site Personnel](https://felixmil.github.io);NA;NA;2018;2018;Création d'un site web personnel sur le framework Hugo via le package R Blogdown.;NA;NA
+teaching_positions;FALSE;;;;;;;;
+teaching_positions;FALSE;;;;;;;;
+data_science_writings;FALSE;;;;;;;;
+data_science_writings;FALSE;;;;;;;;
+data_science_writings;FALSE;;;;;;;;
+data_science_writings;FALSE;;;;;;;;
+data_science_writings;FALSE;;;;;;;;
+data_science_writings;FALSE;;;;;;;;
+about_me_press;FALSE;;;;;;;;
+about_me_press;FALSE;;;;;;;;
+about_me_press;FALSE;;;;;;;;
+by_me_press;FALSE;;;;;;;;
+by_me_press;FALSE;;;;;;;;
+by_me_press;FALSE;;;;;;;;
+by_me_press;FALSE;;;;;;;;
+by_me_press;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
+academic_articles;FALSE;;;;;;;;
